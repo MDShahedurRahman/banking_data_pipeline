@@ -16,4 +16,8 @@ def clean_transaction_data(df, silver_path):
         .dropna() \
         .withColumn("txn_date", to_date(col("txn_date"))) \
         .withColumnRenamed("amount", "txn_amount")
+
+    cleaned_df.write.mode("overwrite").parquet(silver_path)
+
+    print("✅ Silver Layer Completed: Cleaned Data Stored")
     return cleaned_df
