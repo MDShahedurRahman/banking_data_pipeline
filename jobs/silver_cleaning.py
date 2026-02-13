@@ -13,4 +13,6 @@ def clean_transaction_data(df, silver_path):
     """
 
     cleaned_df = df.dropDuplicates() \
-        .dropna()
+        .dropna() \
+        .withColumn("txn_date", to_date(col("txn_date")))
+    return cleaned_df
