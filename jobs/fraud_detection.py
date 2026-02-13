@@ -11,4 +11,13 @@ def fraud_detection(df, fraud_path):
     - Merchant = Casino
     - Category = Gambling
     """
+
+    fraud_df = df.withColumn(
+        "fraud_flag",
+        when(col("txn_amount") > 3000, "HIGH_AMOUNT")
+    )
+
+    fraud_df.write.mode("overwrite").parquet(fraud_path)
+
+    print("🚨 Fraud Detection Completed: Fraud Flags Added")
     return fraud_df
