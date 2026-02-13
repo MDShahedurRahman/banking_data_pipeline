@@ -9,3 +9,9 @@ def ingest_transactions(spark, input_file, bronze_path):
     - Reads raw CSV transactions
     - Writes raw Parquet output
     """
+
+    df = spark.read.csv(
+        input_file,
+        header=True,
+        schema=transaction_schema()
+    )
