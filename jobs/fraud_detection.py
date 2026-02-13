@@ -16,5 +16,7 @@ def fraud_detection(df, fraud_path):
         "fraud_flag",
         when(col("txn_amount") > 3000, "HIGH_AMOUNT")
         .when(col("merchant") == "Casino", "SUSPICIOUS_MERCHANT")
+        .when(col("category") == "Gambling", "GAMBLING_CATEGORY")
     )
+
     return fraud_df
