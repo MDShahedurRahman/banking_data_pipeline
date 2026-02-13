@@ -17,6 +17,9 @@ def fraud_detection(df, fraud_path):
         when(col("txn_amount") > 3000, "HIGH_AMOUNT")
         .when(col("merchant") == "Casino", "SUSPICIOUS_MERCHANT")
         .when(col("category") == "Gambling", "GAMBLING_CATEGORY")
+        .otherwise("NORMAL")
     )
+
+    fraud_df.write.mode("overwrite").parquet(fraud_path)
 
     return fraud_df
