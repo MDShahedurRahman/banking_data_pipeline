@@ -12,5 +12,5 @@ def clean_transaction_data(df, silver_path):
     - Renames amount column
     """
 
-    cleaned_df = df.dropDuplicates()
-    return cleaned_df
+    cleaned_df = df.dropDuplicates() \
+        .dropna()
