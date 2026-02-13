@@ -22,4 +22,5 @@ def fraud_detection(df, fraud_path):
 
     fraud_df.write.mode("overwrite").parquet(fraud_path)
 
+    print("🚨 Fraud Detection Completed: Fraud Flags Added")
     return fraud_df
