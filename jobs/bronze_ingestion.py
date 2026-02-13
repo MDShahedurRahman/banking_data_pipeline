@@ -15,3 +15,8 @@ def ingest_transactions(spark, input_file, bronze_path):
         header=True,
         schema=transaction_schema()
     )
+
+    df.write.mode("overwrite").parquet(bronze_path)
+
+    print("✅ Bronze Layer Completed: Raw Parquet Stored")
+    return df
