@@ -11,3 +11,4 @@ def clean_transaction_data(df, silver_path):
     - Converts txn_date to DateType
     - Renames amount column
     """
+    return cleaned_df
