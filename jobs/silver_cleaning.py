@@ -11,4 +11,6 @@ def clean_transaction_data(df, silver_path):
     - Converts txn_date to DateType
     - Renames amount column
     """
+
+    cleaned_df = df.dropDuplicates()
     return cleaned_df
