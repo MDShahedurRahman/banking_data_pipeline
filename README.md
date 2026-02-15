@@ -170,3 +170,13 @@ Phase 4: Gold Star Schema (36–45)
 Phase 5: Business Queries (46–50)
 
 ---
+
+## 📌 Future Enhancements
+
+- Integrate AWS S3 + Glue Catalog  
+- Load Gold tables into Redshift/Snowflake  
+- Add Kafka streaming ingestion  
+- Orchestrate pipeline using Airflow  
+- Add ML-based fraud prediction  
+
+---
