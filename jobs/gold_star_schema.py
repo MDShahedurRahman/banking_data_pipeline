@@ -33,4 +33,7 @@ def build_star_schema(df, gold_path):
         "fraud_flag"
     )
 
+    # Save tables
+    dim_customer.write.mode("overwrite").parquet(gold_path + "/dim_customer")
+
     return fact_transactions
