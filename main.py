@@ -37,6 +37,9 @@ def main():
     print("\n📊 Top Spending Customers:")
     top_spending_customers(fraud_df).show()
 
+    print("\n🚨 Fraud Transaction Breakdown:")
+    fraud_transaction_percentage(fraud_df).show()
+
 
 if __name__ == "__main__":
     main()
