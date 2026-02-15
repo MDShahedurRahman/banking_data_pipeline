@@ -46,6 +46,9 @@ def main():
     print("\n🌍 Spending by City:")
     spending_by_city(fraud_df).show()
 
+    spark.stop()
+    print("\n✅ Pipeline Execution Completed Successfully!\n")
+
 
 if __name__ == "__main__":
     main()
