@@ -39,4 +39,5 @@ def build_star_schema(df, gold_path):
     fact_transactions.write.mode("overwrite").parquet(
         gold_path + "/fact_transactions")
 
+    print("✅ Gold Layer Completed: Star Schema Created")
     return fact_transactions
