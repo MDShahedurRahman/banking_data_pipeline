@@ -120,3 +120,18 @@ Output:
 output/silver/fraud_flagged/
 
 ---
+
+### 🥇 Gold Layer: Star Schema Modeling
+Creates analytics-ready tables:
+
+Dimensions:
+- dim_customer  
+- dim_merchant  
+
+Fact Table:
+- fact_transactions  
+
+Output:
+output/gold/
+
+---
