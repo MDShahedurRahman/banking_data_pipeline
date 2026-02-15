@@ -28,3 +28,12 @@ def revenue_by_merchant(df):
     return df.groupBy("merchant") \
         .agg(sum("txn_amount").alias("merchant_revenue")) \
         .orderBy(desc("merchant_revenue"))
+
+
+def spending_by_city(df):
+    """
+    Returns spending breakdown by city.
+    """
+    return df.groupBy("city") \
+        .agg(sum("txn_amount").alias("city_spending")) \
+        .orderBy(desc("city_spending"))
