@@ -160,3 +160,13 @@ python main.py
 ```
 
 ---
+
+## 📝 Git Commit Strategy (50 Commits)
+
+Phase 1: Setup (1–10)  
+Phase 2: Silver Cleaning (11–25)  
+Phase 3: Fraud Detection (26–35)  
+Phase 4: Gold Star Schema (36–45)  
+Phase 5: Business Queries (46–50)
+
+---
