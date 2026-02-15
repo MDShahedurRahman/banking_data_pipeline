@@ -40,6 +40,9 @@ def main():
     print("\n🚨 Fraud Transaction Breakdown:")
     fraud_transaction_percentage(fraud_df).show()
 
+    print("\n🏦 Revenue by Merchant:")
+    revenue_by_merchant(fraud_df).show()
+
 
 if __name__ == "__main__":
     main()
