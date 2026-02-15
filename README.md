@@ -61,3 +61,17 @@ output/
 - reports/  
 
 ---
+
+## 📌 Sample Dataset
+
+File: `data/transactions.csv`
+
+```csv
+txn_id,customer_id,customer_name,account_type,merchant,category,amount,txn_date,city
+1001,C001,John Smith,Savings,Amazon,Shopping,250,2025-01-05,New York
+1002,C002,Amina Rahman,Checking,Walmart,Grocery,80,2025-01-06,Boston
+1003,C003,Sarah Lee,Credit,Apple,Electronics,1200,2025-01-08,Chicago
+1004,C001,John Smith,Credit,Casino,Gambling,5000,2025-01-10,Las Vegas
+```
+
+---
