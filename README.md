@@ -144,3 +144,19 @@ Generates KPIs such as:
 - Spending by city  
 
 ---
+
+## ▶️ How to Run the Project
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the pipeline:
+
+```bash
+python main.py
+```
+
+---
