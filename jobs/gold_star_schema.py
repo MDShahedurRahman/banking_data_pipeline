@@ -17,4 +17,9 @@ def build_star_schema(df, gold_path):
         "city"
     ).distinct()
 
+    # Dimension: Merchant
+    dim_merchant = df.select(
+        "merchant",
+        "category"
+    ).distinct()
     return fact_transactions
