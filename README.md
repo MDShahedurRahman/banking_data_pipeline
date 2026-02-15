@@ -30,3 +30,34 @@ Raw CSV Transactions
 → Business Queries + KPI Reports
 
 ---
+
+## 📂 Project Structure
+
+banking_data_pipeline/
+
+- main.py  
+- config.py  
+- requirements.txt  
+
+data/  
+- transactions.csv  
+
+jobs/  
+- bronze_ingestion.py  
+- silver_cleaning.py  
+- fraud_detection.py  
+- gold_star_schema.py  
+- business_queries.py  
+
+utils/  
+- spark_session.py  
+- schema_definitions.py  
+- helpers.py  
+
+output/  
+- bronze/  
+- silver/  
+- gold/  
+- reports/  
+
+---
