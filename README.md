@@ -20,3 +20,13 @@ This pipeline performs:
 - Business KPI queries for insights
 
 ---
+
+## 🏗 Pipeline Architecture (Medallion Design)
+
+Raw CSV Transactions  
+→ Bronze Layer (Raw Parquet)  
+→ Silver Layer (Clean + Fraud Flagged Parquet)  
+→ Gold Layer (Star Schema Tables)  
+→ Business Queries + KPI Reports
+
+---
