@@ -19,3 +19,12 @@ def fraud_transaction_percentage(df):
     return df.groupBy("fraud_flag") \
         .agg(count("*").alias("transaction_count")) \
         .orderBy(desc("transaction_count"))
+
+
+def revenue_by_merchant(df):
+    """
+    Returns merchants generating highest revenue.
+    """
+    return df.groupBy("merchant") \
+        .agg(sum("txn_amount").alias("merchant_revenue")) \
+        .orderBy(desc("merchant_revenue"))
