@@ -10,3 +10,12 @@ def top_spending_customers(df):
     return df.groupBy("customer_name") \
         .agg(sum("txn_amount").alias("total_spent")) \
         .orderBy(desc("total_spent"))
+
+
+def fraud_transaction_percentage(df):
+    """
+    Returns fraud vs normal transaction counts.
+    """
+    return df.groupBy("fraud_flag") \
+        .agg(count("*").alias("transaction_count")) \
+        .orderBy(desc("transaction_count"))
