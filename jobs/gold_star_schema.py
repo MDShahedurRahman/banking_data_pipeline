@@ -36,5 +36,7 @@ def build_star_schema(df, gold_path):
     # Save tables
     dim_customer.write.mode("overwrite").parquet(gold_path + "/dim_customer")
     dim_merchant.write.mode("overwrite").parquet(gold_path + "/dim_merchant")
+    fact_transactions.write.mode("overwrite").parquet(
+        gold_path + "/fact_transactions")
 
     return fact_transactions
