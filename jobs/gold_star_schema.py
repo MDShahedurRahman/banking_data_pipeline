@@ -22,4 +22,15 @@ def build_star_schema(df, gold_path):
         "merchant",
         "category"
     ).distinct()
+
+    # Fact Table: Transactions
+    fact_transactions = df.select(
+        "txn_id",
+        "customer_id",
+        "merchant",
+        "txn_date",
+        "txn_amount",
+        "fraud_flag"
+    )
+
     return fact_transactions
