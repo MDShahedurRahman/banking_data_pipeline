@@ -24,6 +24,9 @@ def main():
     # Bronze Layer
     bronze_df = ingest_transactions(spark, RAW_FILE, BRONZE_PATH)
 
+    # Silver Layer
+    silver_df = clean_transaction_data(bronze_df, SILVER_PATH)
+
 
 if __name__ == "__main__":
     main()
