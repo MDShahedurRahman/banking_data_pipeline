@@ -75,3 +75,15 @@ txn_id,customer_id,customer_name,account_type,merchant,category,amount,txn_date,
 ```
 
 ---
+
+## ⚙️ Technologies Used
+
+- Python  
+- PySpark  
+- Parquet Storage Format  
+- Medallion Data Lake Architecture  
+- Fraud Analytics Engineering  
+- Star Schema Modeling  
+- Business KPI Queries  
+
+---
