@@ -27,6 +27,9 @@ def main():
     # Silver Layer
     silver_df = clean_transaction_data(bronze_df, SILVER_PATH)
 
+    # Fraud Detection
+    fraud_df = fraud_detection(silver_df, FRAUD_PATH)
+
 
 if __name__ == "__main__":
     main()
