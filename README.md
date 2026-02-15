@@ -135,3 +135,12 @@ Output:
 output/gold/
 
 ---
+
+### 📊 Business Analytics Queries
+Generates KPIs such as:
+- Top spending customers  
+- Fraud transaction percentage  
+- Revenue by merchant  
+- Spending by city  
+
+---
