@@ -33,6 +33,10 @@ def main():
     # Gold Layer
     build_star_schema(fraud_df, GOLD_PATH)
 
+    # Business Queries
+    print("\n📊 Top Spending Customers:")
+    top_spending_customers(fraud_df).show()
+
 
 if __name__ == "__main__":
     main()
