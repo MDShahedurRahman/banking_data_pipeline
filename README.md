@@ -109,3 +109,14 @@ Output:
 output/silver/
 
 ---
+
+### 🚨 Fraud Detection Layer
+Flags suspicious transactions such as:
+- Amount > $3000  
+- Gambling/Casino merchants  
+- Category anomalies  
+
+Output:
+output/silver/fraud_flagged/
+
+---
