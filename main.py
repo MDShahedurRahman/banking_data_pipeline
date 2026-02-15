@@ -43,6 +43,9 @@ def main():
     print("\n🏦 Revenue by Merchant:")
     revenue_by_merchant(fraud_df).show()
 
+    print("\n🌍 Spending by City:")
+    spending_by_city(fraud_df).show()
+
 
 if __name__ == "__main__":
     main()
