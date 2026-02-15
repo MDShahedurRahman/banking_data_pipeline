@@ -87,3 +87,25 @@ txn_id,customer_id,customer_name,account_type,merchant,category,amount,txn_date,
 - Business KPI Queries  
 
 ---
+
+## 🚀 Pipeline Jobs
+
+### 🥉 Bronze Layer: Raw Ingestion
+Reads raw CSV and stores raw Parquet output.
+
+Output:
+output/bronze/
+
+---
+
+### 🥈 Silver Layer: Cleaning & Transformation
+Applies:
+- Duplicate removal  
+- Null handling  
+- Date conversion  
+- Derived metrics  
+
+Output:
+output/silver/
+
+---
