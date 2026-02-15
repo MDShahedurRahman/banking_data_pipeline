@@ -17,6 +17,7 @@ from jobs.business_queries import (
 
 
 def main():
+    spark = get_spark_session()
 
 
 if __name__ == "__main__":
