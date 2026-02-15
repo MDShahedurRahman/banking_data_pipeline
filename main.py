@@ -30,6 +30,9 @@ def main():
     # Fraud Detection
     fraud_df = fraud_detection(silver_df, FRAUD_PATH)
 
+    # Gold Layer
+    build_star_schema(fraud_df, GOLD_PATH)
+
 
 if __name__ == "__main__":
     main()
