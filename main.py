@@ -19,6 +19,11 @@ from jobs.business_queries import (
 def main():
     spark = get_spark_session()
 
+    print("\n--- Running Banking Data Pipeline ---\n")
+
+    # Bronze Layer
+    bronze_df = ingest_transactions(spark, RAW_FILE, BRONZE_PATH)
+
 
 if __name__ == "__main__":
     main()
